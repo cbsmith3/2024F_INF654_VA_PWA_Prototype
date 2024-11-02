@@ -1,11 +1,15 @@
 {
     "name": "Disc Haven",
-    "short_name": "DiscHaven",
+    "short_name": "DH",
+    "description":  "Disc golf retail app",
     "start_url": "/index.html",
+    "id":  "/index.html",
+    "scope":  "/",
     "display": "standalone",
-    "background_color": "#FF8C00",
+    "background_color": "#5D6970",
     "theme_color": "#0040FF",
     "orientation": "portrait-primary",
+    "lang":  "en-US",
     "icons": [
         {
             "src": "/img/icons/mybag72x72.png",
@@ -46,6 +50,21 @@
             "src": "/img/icons/mybag512x512.png",
             "type": "image/png",
             "sizes": "512x512"
+        }
+    ],
+
+    "screenshots": [
+        {
+            "src":  "/img/screenshots/screenshot512x512.png",
+            "type":  "image/png",
+            "sizes":  "512X512",
+            "form_factor":  "wide"
+        },
+        {
+            "src":  "/img/screenshots/screenshot512x512.png",
+            "type":  "image/png",
+            "sizes":  "512x512",
+            "form_factor":  "narrow"
         }
     ]
 }
