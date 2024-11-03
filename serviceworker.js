@@ -1,9 +1,8 @@
-const CACHE_NAME = "discHaven-v3";
+const CACHE_NAME = "discHaven-v5";
 
 const ASSETS_TO_CACHE = [
   "/",
   "/index.html",
-  "/pages/about.html",
   "/pages/contact.html",
   "/pages/shop.html",
   "/pages/cart.html",
@@ -16,7 +15,7 @@ const ASSETS_TO_CACHE = [
   "/img/mybag199.png",
   "/img/mybagFavicon.png",
   "/img/discs/archangel.PNG",
-  "/img/discs/aviarPNG",
+  "/img/discs/aviar.PNG",
   "/img/discs/banshee.PNG",
   "/img/discs/beast.PNG",
   "/img/discs/destroyer.PNG",
@@ -35,61 +34,9 @@ const ASSETS_TO_CACHE = [
   "/img/icons/mybag384x384.png",
   "/img/icons/mybag512x512.png",
   "/img/screenshots/screenshot512x512.png"
-  
 ];
 
 
-//Install event
-self.addEventListener("install", (event) => {
-  console.log("Service Worker:  Installing...");
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log("Service Worker:  Caching files");
-      return caches.addAll(ASSETS_TO_CACHE);
-    })
-  );
-});
-
-//Activate Event
-self.addEventListener("activate", (event) => {
-  console.log("Service Worker:  Activating...");
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            console.log("Service Worker:  Deleting Old Cache");
-            return caches.delete(cache);
-          }
-        })
-      );
-    })
-  );
-});
-
-
-
-//Fetch Event
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-
-      return fetch(event.request).then((networkResponse) => {
-        return caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, networkResponse.clone());
-          // Update cache with new response
-          return networkResponse;
-        });
-      });
-    })
-  );
-});
-
-
-/*
 // Install Event
 self.addEventListener("install", async (event) => {
   console.log("Service worker: Installing...");
@@ -146,4 +93,3 @@ self.addEventListener("fetch", (event) => {
     })()
   );
 });
-*/
