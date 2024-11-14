@@ -6,6 +6,7 @@ const ASSETS_TO_CACHE = [
   "/pages/contact.html",
   "/pages/shop.html",
   "/pages/cart.html",
+  "/pages/login.html",
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/js/ui.js",

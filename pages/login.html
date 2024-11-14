@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Disc Haven</title>
     <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="icon" type="image/x-icon" href="/img/mybagFavicon.png">
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="manifest" href="/manifest.json" />
+    
   </head>
   <body class="blue-grey">
     <header>
-      <!-- Nav bar for bigger screens -->
+          
+          <!-- Nav bar for bigger screens -->
       <nav class="z-depth-0 blue darken-4">
+        
         <div class="nav-wrapper container">
+          
+          
           <a
             href="/"
             data-target="mobile-menu"
-            class="brand-logo orange-text left"
+            class="brand-logo orange-text darken-4 left"
             aria-label="Disc Haven Home"
           ><img class="left circle hide-on-med-and-down" src="/img/mybag96.png" alt="Disc Golf Bag" style="padding-right:20px" height="62px"></img>
             Disc Haven
@@ -54,24 +60,25 @@
                 >Contact</a
               >
             </li>
-            <li>
+            <li class="active">
               <a
                 href="/pages/login.html"
                 class="waves-effect orange-text darken-4"
                 >Login / Signup</a
               >
             </li>
-            <li class="active">
-                <a 
-                    href="/pages/cart.html"
-                    class="waves-effect orange-text darken-4"
-                    ><i class="material-icons left orange-text darken-4">shopping_cart</i>
-                    Shopping Cart
-                </a>
-            </li>
+            <li>
+              <a 
+                  href="/pages/cart.html"
+                  class="waves-effect orange-text darken-4"
+                  ><i class="material-icons left">shopping_cart</i>
+                  Shopping Cart
+              </a>
+          </li>
           </ul>
         </div>
       </nav>
+      
     </header>
 
     <!-- Side Navbar for medium and small screens-->
@@ -80,7 +87,9 @@
         <li><a class="subheader orange-text darken-4">Disc Haven</a></li>
         <hr>
         <li>
-          <a href="/" class="waves-effect orange-text darken-4"> Home </a>
+            <a href="/" class="waves-effect orange-text darken-4">
+                Home
+            </a>
         </li>
         <li>
           <a
@@ -104,42 +113,36 @@
           >
         </li>
         <li>
-            <a 
-                href="/pages/cart.html"
-                class="waves-effect orange-text darken-4"
-                ><i class="material-icons orange-text darken-4">shopping_cart</i>
-                Shopping Cart
-            </a>
-        </li>
+          <a 
+              href="/pages/cart.html"
+              class="waves-effect orange-text darken-4"
+              ><i class="material-icons orange-text darken-4">shopping_cart</i>
+              Shopping Cart
+          </a>
+      </li>
       </ul>
     </aside>
 
     <main>
-    <div class="container orange-text darken-4">
-      <h5 class="center">Shopping Cart</h5>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        reprehenderit dolorem, earum veniam maxime minima eligendi modi saepe.
-        Architecto non enim unde autem ducimus quaerat quod minus voluptatibus
-        officia iusto?
-      </p>
-    </div>
+      
+            
     </main>
 
     <footer class="page-footer blue darken-4">
-        <div class="container">
-          <h5 class="orange-text darken-4">Footer Content</h5>
-          <p class="orange-text darken-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque assumenda suscipit molestiae praesentium debitis. Quasi ut repellat facere corrupti libero minima vel, rem debitis iste doloribus, nostrum ratione consectetur dignissimos!</p>
+      <div class="container">
+        <h5 class="orange-text darken-4">Footer Content</h5>
+        <p class="orange-text darken-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque assumenda suscipit molestiae praesentium debitis. Quasi ut repellat facere corrupti libero minima vel, rem debitis iste doloribus, nostrum ratione consectetur dignissimos!</p>
+      </div>
+      <div class="footer-copyright orange-text darken-4">
+        <div class="container orange-text darken-4">
+          &copy 2024 Christopher Smith
         </div>
-        <div class="footer-copyright orange-text darken-4">
-          <div class="container">
-            &copy 2024 Christopher Smith
-          </div>
-        </div>
+      </div>
 
-      </footer>
+    </footer>
 
     <script src="/js/materialize.min.js"></script>
     <script src="/js/ui.js"></script>
+
   </body>
 </html>
