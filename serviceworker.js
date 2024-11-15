@@ -1,4 +1,4 @@
-const CACHE_NAME = "discHaven-v5";
+const CACHE_NAME = "discHaven-v6";
 
 const ASSETS_TO_CACHE = [
   "/",
