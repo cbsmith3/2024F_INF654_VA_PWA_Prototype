@@ -25,6 +25,7 @@ const ASSETS_TO_CACHE = [
   "/img/discs/truth.PNG",
   "/img/discs/valkyrie.PNG",
   "/img/discs/wraith.PNG",
+  "/img/icons/mybag62x62.png",
   "/img/icons/mybag72x72.png",
   "/img/icons/mybag96x96.png",
   "/img/icons/mybag128x128.png",
