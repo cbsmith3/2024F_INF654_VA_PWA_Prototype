@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     M.Sidenav.init(menus, { edge: "right" });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+});
+
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
     .register("/serviceworker.js")
