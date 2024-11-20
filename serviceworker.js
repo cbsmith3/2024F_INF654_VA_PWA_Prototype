@@ -9,6 +9,7 @@ const ASSETS_TO_CACHE = [
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/js/ui.js",
+  "/js/firebaseDB.js",
   "/img/basket.png",
   "/img/mybag.png",
   "/img/mybag96.png",
