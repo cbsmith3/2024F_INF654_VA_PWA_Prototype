@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disc Haven</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="orange lighten-5">
+    <div
+      class="container z-depth-3"
+      style="margin-top: 50px; padding: 20px; border-radius: 10px"
+    >
+      <!-- Login Form -->
+      <div id="login-form" class="row">
+        <h4 class="center-align orange-text text-darken-2">Login</h4>
+        <div class="input-field col s12">
+          <input type="email" id="login-email" class="validate" required />
+          <label for="login-email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input
+            type="password"
+            id="login-password"
+            class="validate"
+            required
+          />
+          <label for="login-password">Password</label>
+        </div>
+        <div class="col s12">
+          <button
+            id="login-btn"
+            class="btn orange darken-2 waves-effect waves-light col s12"
+          >
+            Login
+          </button>
+        </div>
+        <div class="col s12 center-align">
+          <p>
+            Don't have an account?
+            <a href="#" id="show-signup" class="orange-text">Sign Up</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="sign-up-form" class="row" style="display: none">
+        <h4 class="center-align orange-text text-darken-2">Sign Up</h4>
+        <div class="input-field col s12">
+          <input type="email" id="sign-up-email" class="validate" required />
+          <label for="sign-up-email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" id="sign-up-firstname" class="validate" required />
+          <label for="sign-up-firstname">First Name</label>
+        </div>
+        <div class="input-field col s12">
+            <input type="text" id="sign-up-lastname" class="validate" required />
+            <label for="sign-up-lastname">Last Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input
+            type="password"
+            id="sign-up-password"
+            class="validate"
+            required
+          />
+          <label for="sign-up-password">Password</label>
+        </div>
+        <div class="col s12">
+          <button
+            id="sign-up-btn"
+            class="btn orange darken-2 waves-effect waves-light col s12"
+          >
+            Sign Up
+          </button>
+        </div>
+        <div class="col s12 center-align">
+          <p>
+            Already have an account?
+            <a href="#" id="show-login" class="orange-text">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/signIn.js"></script>
+  </body>
+</html>

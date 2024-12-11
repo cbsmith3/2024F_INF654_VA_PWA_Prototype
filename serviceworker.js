@@ -1,4 +1,4 @@
-const CACHE_NAME = "discHaven-v6";
+const CACHE_NAME = "discHaven-v9";
 
 const ASSETS_TO_CACHE = [
   "/",
@@ -6,10 +6,14 @@ const ASSETS_TO_CACHE = [
   "/pages/contact.html",
   "/pages/shop.html",
   "/pages/cart.html",
+  "/pages/auth.html",
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/js/ui.js",
   "/js/firebaseDB.js",
+  "/js/firebaseConfig.js",
+  "/js/auth.js",
+  "/js/signIn.js",
   "/img/basket.png",
   "/img/mybag.png",
   "/img/mybag96.png",
@@ -72,20 +76,23 @@ self.addEventListener("activate", async (event) => {
 
 // Fetch Event with async/await
 self.addEventListener("fetch", (event) => {
-
+  console.log("Service Worker:  Fetching...");
   event.respondWith(
     (async () => {
+      // Only cache GET requests
+      if (event.request.method !== "GET") {
+        return fetch(event.request);
+      }
       const cachedResponse = await caches.match(event.request);
 
       if (cachedResponse) {
         return cachedResponse;
       }
-
       try {
         const networkResponse = await fetch(event.request);
         const cache = await caches.open(CACHE_NAME);
         // Update cache with the fetched response
-        await cache.put(event.request, networkResponse.clone());
+        cache.put(event.request, networkResponse.clone());
         return networkResponse;
       } catch (error) {
         console.error("Fetch failed, returning offline page:  ", error);

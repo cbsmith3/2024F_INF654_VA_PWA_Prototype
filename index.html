@@ -62,8 +62,8 @@
               </a>
             </li>
             <li>
-              <a href="#" data-target="modal-Login" class="btn modal-trigger waves-effect hoverable blue orange-text darken-4"> 
-                Login
+              <a href="#" id="logout-btn" class="waves-effect blue orange-text darken-4" style="display: none"> 
+                Logout
               </a>
             </li>
           </ul>
@@ -103,92 +103,12 @@
           </a>
         </li>
         <li>
-          <a href="#" data-target="modal-Login" class=" btn modal-trigger waves-effect hoverable blue orange-text darken-4" style="margin-left:15px;"> 
-            Login
+          <a href="#" class="waves-effect blue orange-text darken-4"> 
+            Logout
           </a>
-      </li>
+        </li>
       </ul>
     </aside>
-
-
-    <!-- Login Pop Up Form -->
-    <div class="modal" id="modal-Login">
-      <h5 class="modal-close orange-text" style="position:absolute; top:10px; right:10px; margin:0; padding:0;">&#10005</h5>
-        
-        <div class="modal-content center blue-grey darken-3">
-          <h4 class="orange-text">Login</h4><br>
-          <form action="#" id="form-login">
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="username" class="validate">
-              <label for="username" class="orange-text">Username</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">lock</i>
-              <input type="password" id="password" class="validate">
-              <label for="password" class="orange-text">Password</label>
-            </div><br>
-
-            <input type="submit" value="Login" class="btn btn-large blue orange-text darken-4" style="width:100%; margin-top:50px">
-          </form><br>
-
-          <p class="center blue-grey darken-3 orange-text">
-            Don't have an account?
-            <a href="#" data-target="modal-Signup" class="btn btn-small blue darken-4 modal-trigger waves-effect orange-text"> 
-              Sign Up
-            </a>
-          </p>
-
-        </div>
-      
-     </div>
-
-     <!-- Sign Up Pop Up Form -->
-     <div class="modal" id="modal-Signup">
-      <h5 class="modal-close orange-text" style="position:absolute; top:10px; right:10px; margin:0; padding:0;">&#10005</h5>
-        
-        <div class="modal-content center blue-grey darken-3">
-          <h4 class="orange-text">Sign Up</h4><br>
-          <form action="#" id="form-signup">
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="firstname" class="validate">
-              <label for="firstname" class="orange-text">Firstname</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="lastname" class="validate">
-              <label for="lastname" class="orange-text">Lastname</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">email</i>
-              <input type="email" id="email" class="validate">
-              <label for="email" class="orange-text">Email</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="username-signup" class="validate">
-              <label for="username-signup" class="orange-text">Username</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">lock</i>
-              <input type="password" id="password-signup" class="validate">
-              <label for="password-signup" class="orange-text">Password</label>
-            </div><br>
-
-            <input type="submit" value="Submit" class="btn btn-large blue orange-text darken-4" style="width:100%; margin-top:50px">
-          </form><br>
-
-        </div>
-      
-     </div>
 
 
     <main>
@@ -254,6 +174,7 @@
 
     </footer>
 
+    <script type="module" src="js/auth.js"></script>
     <script src="/js/materialize.min.js"></script>
     <script type="module" src="/js/ui.js"></script>
     <script type="module" src="/js/firebaseDB.js"></script>

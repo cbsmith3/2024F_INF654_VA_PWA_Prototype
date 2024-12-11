@@ -62,8 +62,8 @@
               </a>
             </li>
             <li>
-              <a href="#" data-target="modal-Login" class="btn modal-trigger waves-effect hoverable blue orange-text darken-4"> 
-                Login
+              <a href="#" id="logout-btn" class="waves-effect blue orange-text darken-4" style="display: none"> 
+                Logout
               </a>
             </li>
           </ul>
@@ -103,96 +103,21 @@
           </a>
         </li>
         <li>
-          <a href="#" data-target="modal-Login" class=" btn modal-trigger waves-effect hoverable blue orange-text darken-4" style="margin-left:15px;"> 
-            Login
+          <a href="#" class="waves-effect blue orange-text darken-4"> 
+            Logout
           </a>
-      </li>
+        </li>
       </ul>
     </aside>
 
 
-     <!-- Login Pop Up Form -->
-     <div class="modal" id="modal-Login">
-      <h5 class="modal-close orange-text" style="position:absolute; top:10px; right:10px; margin:0; padding:0;">&#10005</h5>
-        
-        <div class="modal-content center blue-grey darken-3">
-          <h4 class="orange-text">Login</h4><br>
-          <form action="#">
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="username" class="validate">
-              <label for="username" class="orange-text">Username</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">lock</i>
-              <input type="password" id="password" class="validate">
-              <label for="password" class="orange-text">Password</label>
-            </div><br>
-
-            <input type="submit" value="Login" class="btn btn-large blue orange-text darken-4" style="width:100%; margin-top:50px">
-          </form><br>
-
-          <p class="center blue-grey darken-3 orange-text">
-            Don't have an account?
-            <a href="#" data-target="modal-Signup" class="btn btn-small blue darken-4 modal-trigger waves-effect orange-text"> 
-              Sign Up
-            </a>
-          </p>
-
-        </div>
-      
-     </div>
-
-     <!-- Sign Up Pop Up Form -->
-     <div class="modal" id="modal-Signup">
-      <h5 class="modal-close orange-text" style="position:absolute; top:10px; right:10px; margin:0; padding:0;">&#10005</h5>
-        
-        <div class="modal-content center blue-grey darken-3">
-          <h4 class="orange-text">Sign Up</h4><br>
-          <form action="#">
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="firstname" class="validate">
-              <label for="firstname" class="orange-text">Firstname</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="lastname" class="validate">
-              <label for="lastname" class="orange-text">Lastname</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">email</i>
-              <input type="email" id="email" class="validate">
-              <label for="email" class="orange-text">Email</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">person</i>
-              <input type="text" id="username-signup" class="validate">
-              <label for="username-signup" class="orange-text">Username</label>
-            </div><br>
-
-            <div class="input-field">
-              <i class="material-icons prefix orange-text">lock</i>
-              <input type="password" id="password-signup" class="validate">
-              <label for="password-signup" class="orange-text">Password</label>
-            </div><br>
-
-            <input type="submit" value="Submit" class="btn btn-large blue orange-text darken-4" style="width:100%; margin-top:50px">
-          </form><br>
-
-        </div>
-      
-     </div>
-
     <main>
+
+  <!-- Start of Disc Cards -->
     <div class="container orange-text darken-4">
       <h5 class="center">Disc Haven Shop</h5>
+
+      <!-- First row of cards -->
       <div class="row">
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
@@ -207,20 +132,9 @@
               <span class="card-title center">Innova Archangel</span>
               <p class="center">$16.00</p>
               <div class="card-action">
-                
-                
-                <!--
-                
-
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
               </div>
             </div>
           </div>
-          
         </div>
       
         <div class="col s12 m6 l3">
@@ -236,18 +150,11 @@
               <span class="card-title center">Innova Aviar</span>
               <p class="center">$12.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -261,18 +168,11 @@
               <span class="card-title center">Innova Banshee</span>
               <p class="center">$16.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -286,20 +186,13 @@
               <span class="card-title center">Innova Beast</span>
               <p class="center">$16.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
       </div>
 
-      </div>
+      <!-- Second row of cards -->
       <div class="row">
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
@@ -314,18 +207,11 @@
               <span class="card-title center">Innova Destroyer</span>
               <p class="center">$17.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -339,18 +225,11 @@
               <span class="card-title center">Innova Leopard</span>
               <p class="center">$14.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -364,18 +243,11 @@
               <span class="card-title center">Latitude 64 Pure</span>
               <p class="center">$13.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -389,20 +261,14 @@
               <span class="card-title center">Innova Skeeter</span>
               <p class="center">$14.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
 
       </div>
+
+      <!-- Third row of cards -->
       <div class="row">
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
@@ -417,18 +283,11 @@
               <span class="card-title center">Dynamic Discs Truth</span>
               <p class="center">$15.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -442,18 +301,11 @@
               <span class="card-title center">Innova Valkyrie</span>
               <p class="center">$16.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -467,18 +319,11 @@
               <span class="card-title center">Innova Wraith</span>
               <p class="center">$17.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
-      </div>
+
         <div class="col s12 m6 l3">
           <div class="card large blue darken-4">
             <div class="card-image" style="overflow: visible">
@@ -492,22 +337,14 @@
               <span class="card-title center">Innova Archangel</span>
               <p class="center">$16.00</p>
               <div class="card-action">
-                <!--
-                <a class="left waves-effect waves-light btn-small btn-decrement">-</a>
-                <a class="center waves-effect waves-light btn-small btn-input"></a>
-                <a class="right waves-effect waves-light btn-small btn-increment">+</a>
-                <a class="center waves-effect waves-light btn">ADD TO CART</a>
-                -->
+              </div>
             </div>
-            
           </div>
-          
         </div>
       </div>
-
-      </div>
-      
+  <!-- End of disc cards -->
     </main>
+
       <footer class="page-footer blue darken-4">
         <div class="container">
           <h5 class="orange-text darken-4">Footer Content</h5>
@@ -521,7 +358,8 @@
 
       </footer>
 
-    <script src="/js/materialize.min.js"></script>
-    <script src="/js/ui.js"></script>
+      <script src="/js/materialize.min.js"></script>
+      <script type="module" src="/js/ui.js"></script>
+      <script type="module" src="/js/firebaseDB.js"></script>
   </body>
 </html>
